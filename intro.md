@@ -1,8 +1,7 @@
 ## 1. Background, Problem Statement & Proposed Solution 
 
 ### a. Introduction
-The supply chain must meet the demands of consumers
-Inventory management is crucial for any business to operate efficiently by tracking stock and fulfilling orders. Numerous distributors struggle with tracking stock and rely on outdated pen-and-paper methods, which are time-consuming and inefficient.
+The supply chain must meet the demands of consumers. Distribution centers help meet that demand by ensuring efficient delivery of goods. They bridge the gap between manufacturers, suppliers, and consumers. For this to happen, the day-to-day operations of distributors must be streamlined.
 
 ### b. Company / Industry background
 Started by Tahir Mahmood in 2016, MTM Distributors is a warehouse that functions as a small distribution center. It is amongst many warehouses within Supreme Industrial Park, Steeledale. As its name suggests, the warehouse focuses on distributing various electronic products to other smaller shops and businesses alike.
