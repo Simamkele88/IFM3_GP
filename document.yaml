@@ -1,0 +1,15 @@
+input files: 
+      -intro.md
+      -requirements.md
+      -usecases.md
+output file: webwizardsD1.pdf
+
+pdf-engine: xelatex  
+toc: true
+
+
+metadata:
+  title: "Deliverable 1"
+  author: "Web Wizards"
+  date: "2025-03"
+     
