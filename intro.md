@@ -47,29 +47,29 @@ These issues result in wasted time, increased operational costs, and a reduced a
 ### e. Proposed Solution: Should apply a desired result to the problem and describe the benefits
 To address these challenges, we propose the development of a Smart Inventory Management System for MTM Distributors. This system will automate and streamline inventory management processes, providing real-time visibility into stock levels and improving overall efficiency.
 
-##### Key Features of the Proposed Solution:
+#### Key Features of the Proposed Solution:
 
-#####   1.Real-Time Inventory Tracking:
+####   1.Real-Time Inventory Tracking:
 
 * The system will provide real-time updates on stock levels, eliminating the need for manual checks.
 
-#####	2.Barcode Scanning:
+####	2.Barcode Scanning:
 
 * Staff can use barcode scanners to quickly and accurately record incoming and outgoing stock.
 
-#####	3.Automated Purchase Orders:
+####	3.Automated Purchase Orders:
 
 * The system will automatically generate purchase orders when stock levels fall below predefined reorder points.
 
-#####	4.Integrated Invoice Management:
+####	4.Integrated Invoice Management:
 
 * Invoices will be generated automatically within the system, reducing manual effort and errors.
 
-#####	5.Spare Parts Management:
+####	5.Spare Parts Management:
 
 * Spare parts will be tracked digitally, making it easy to search for and update information.
 
-#####	6.Reporting and Analytics:
+####	6.Reporting and Analytics:
 
 * The system will generate reports on stock levels, sales, and order history, providing valuable insights for decision-making.
 
