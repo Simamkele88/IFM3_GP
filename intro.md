@@ -13,23 +13,23 @@ The distribution industry is highly competitive, and companies must ensure effic
 ### c. Current system(s) or/and procedures followed
 Currently, MTM Distributors uses a combination of paper records and Excel spreadsheets to manage its inventory, orders, and spare parts. The following are the key processes in place:
 
-# 1.Stock Receiving:
+#### 1.Stock Receiving:
 
 * When an order arrives, the invoice (containing details such as invoice number, supplier name, company name, model number, quantity, and price) is manually recorded in an Excel sheet.
 
 * Staff must physically check the warehouse to verify stock levels, as there is no real-time tracking system.
 
-# 2.Stock Sales:
+#### 2.Stock Sales:
 
 * When items are sold, an invoice is manually created using Microsoft Publisher.
 
 * The sold items are marked in the same Excel sheet used for stock receiving.
 
-# 3.Spare Parts Management:
+#### 3.Spare Parts Management:
 
 * Spare parts are recorded and tracked in a physical book, making it difficult to search for or update information.
 
-# 4.Backups:
+#### 4.Backups:
 
 * The Excel sheet used for inventory management has been in use for many years, with backups made manually to prevent data loss.
 
@@ -47,52 +47,36 @@ These issues result in wasted time, increased operational costs, and a reduced a
 ### e. Proposed Solution: Should apply a desired result to the problem and describe the benefits
 To address these challenges, we propose the development of a Smart Inventory Management System for MTM Distributors. This system will automate and streamline inventory management processes, providing real-time visibility into stock levels and improving overall efficiency.
 
-# Key Features of the Proposed Solution:
+##### Key Features of the Proposed Solution:
 
-#   1.Real-Time Inventory Tracking:
+#####   1.Real-Time Inventory Tracking:
 
-		* The system will provide real-time updates on stock levels, eliminating the need for manual checks.
+* The system will provide real-time updates on stock levels, eliminating the need for manual checks.
 
-#	2.Barcode Scanning:
+#####	2.Barcode Scanning:
 
-		* Staff can use barcode scanners to quickly and accurately record incoming and outgoing stock.
+* Staff can use barcode scanners to quickly and accurately record incoming and outgoing stock.
 
-#	3.Automated Purchase Orders:
+#####	3.Automated Purchase Orders:
 
-		* The system will automatically generate purchase orders when stock levels fall below predefined reorder points.
+* The system will automatically generate purchase orders when stock levels fall below predefined reorder points.
 
-#	4.Integrated Invoice Management:
+#####	4.Integrated Invoice Management:
 
-		* Invoices will be generated automatically within the system, reducing manual effort and errors.
+* Invoices will be generated automatically within the system, reducing manual effort and errors.
 
-Spare Parts Management:
+#####	5.Spare Parts Management:
 
-Spare parts will be tracked digitally, making it easy to search for and update information.
+* Spare parts will be tracked digitally, making it easy to search for and update information.
 
-Reporting and Analytics:
+#####	6.Reporting and Analytics:
 
-The system will generate reports on stock levels, sales, and order history, providing valuable insights for decision-making.
+* The system will generate reports on stock levels, sales, and order history, providing valuable insights for decision-making.
 
-Benefits of the Proposed Solution:
+#### Benefits of the Proposed Solution:
 
-Improved Efficiency:
-
-Automation of manual processes will save time and reduce errors.
-
-Real-Time Visibility:
-
-Staff will have instant access to accurate stock levels, improving decision-making.
-
-Scalability:
-
-The system will support MTM Distributors’ growth by handling increased inventory and order volumes.
-
-Cost Savings:
-
-Reduced errors and improved efficiency will lower operational costs.
-
-Enhanced Customer Satisfaction:
-
-Faster order processing and accurate inventory data will improve customer service.
-
-By implementing this system, MTM Distributors will be able to streamline its operations, reduce costs, and position itself for future growth.
+1. Automation of manual processes will save time and reduce errors.
+2. Staff will have instant access to accurate stock levels, improving decision-making.
+3. The system will support MTM Distributors’ growth by handling increased inventory and order volumes.
+4. Reduced errors and improved efficiency will lower operational costs.
+5. Faster order processing and accurate inventory data will improve customer service.
