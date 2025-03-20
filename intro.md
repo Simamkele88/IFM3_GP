@@ -1,15 +1,19 @@
 ## 1. Background, Problem Statement & Proposed Solution 
 
 ### a. Introduction
-In today’s fast-paced business environment, efficient inventory management is critical for the success of any distribution company. Distribution centers help meet the demand of consumers by ensuring efficient delivery of goods.  
-They bridge the gap between manufacturers, suppliers, and consumers. For this to happen, the day-to-day operations of distributors must be streamlined.
-MTM Distributors, a small but growing warehouse in Supreme Industrial Park, Steeledalecurrently relies on manual processes and outdated tools like Excel spreadsheets to manage its inventory. This approach is time-consuming, error-prone, and lacks real-time visibility into stock levels. To address these challenges, we propose the development of a Smart Inventory Management System that will streamline MTM Distributors’ operations, improve accuracy, and provide real-time insights into inventory levels. 
+We are Team (team name), a group of third-year Computer Science and Software Engineering students from the Academy of Computer Science and Software Engineering. Our team consists of:
+ 
+ 1. Simamkele wekeza 
+ 2. Goodhope Maduna
+ 3. Lemongang Monnamoloi
+ 4. Waleed Mahmood
+ 
+ ####Project Goal:
+*  Develop a Smart Inventory Management System for MTM Distributors to streamline operations and improve efficiency.
 
 
 ### b. Company / Industry background
 MTM Distributors, founded by Tahir Mahmood in 2016, operates as a small distribution center within Supreme Industrial Park, Steeledale. The company specializes in distributing electronic products to smaller shops and businesses. Over the years, MTM Distributors has built a reputation for reliability and quality service. However, as the business grows, the limitations of its current manual inventory management processes are becoming wide.
-
-The distribution industry is highly competitive, and companies must ensure efficient operations to remain profitable. Real-time inventory tracking, accurate order management, and streamlined processes are essential for meeting customer demands and maintaining a competitive edge. Unfortunately, MTM Distributors’ reliance on paper-based records and Excel spreadsheets is hindering its ability to scale and operate efficiently.
 ### c. Current system(s) or/and procedures followed
 Currently, MTM Distributors uses a combination of paper records and Excel spreadsheets to manage its inventory, orders, and spare parts. The following are the key processes in place:
 
@@ -29,29 +33,26 @@ Currently, MTM Distributors uses a combination of paper records and Excel spread
 
 * Spare parts are recorded and tracked in a physical book, making it difficult to search for or update information.
 
-#### 4.Backups:
-
-* The Excel sheet used for inventory management has been in use for many years, with backups made manually to prevent data loss.
-
-These manual processes are inefficient, prone to human error, and lack real-time visibility into stock levels, leading to delays, inaccuracies, and operational inefficiencies.
+These processes are inefficient, prone to human error, and lack real-time visibility into stock levels, leading to delays, inaccuracies, and operational inefficiencies.
 
 ### d. Problem Statement: Concise description of the issue(s) to be addressed
 MTM Distributors faces several challenges due to its reliance on manual inventory management processes:
 
 Staff must physically check the warehouse to determine stock levels, leading to delays and inefficiencies. 
 Manual data entry in Excel spreadsheets and paper records increases the risk of errors, such as incorrect stock counts or misplaced invoices.
-The manual creation of invoices using Microsoft Publisher is time-consuming and lacks integration with inventory data.
+The creation of invoices using Microsoft Publisher is time-consuming and lacks integration with inventory data.
 Spare parts are tracked in a physical book, making it difficult to search for or update information.
 
 These issues result in wasted time, increased operational costs, and a reduced ability to meet customer demands effectively.
 ### e. Proposed Solution: Should apply a desired result to the problem and describe the benefits
-To address these challenges, we propose the development of a Smart Inventory Management System for MTM Distributors. This system will automate and streamline inventory management processes, providing real-time visibility into stock levels and improving overall efficiency.
+To address these challenges, we propose the development of a Smart Inventory Management System for MTM Distributors. This is a software tool that helps businesses to keep track of their stock. It shows you what’s in stock in real time, helps manage sales and purchases, can suggest when to reorder items. This system enables stock management (track stock levels across levels e.g. warehouse , shelves , categorize items ), Order management (Process customer orders , update the stock levels as items are sold). This system will make use of a mobile app used by the staff on-the-go to do stock updates , receiving notifications and also for task management.
+ .This system will automate and streamline inventory management processes, providing real-time visibility into stock levels and improving overall efficiency.
 
 #### Key Features of the Proposed Solution:
 
 ####   1.Real-Time Inventory Tracking:
 
-* The system will provide real-time updates on stock levels, eliminating the need for manual checks.
+* The system will provide real-time updates on stock levels, eliminating the need for checking physically.
 
 ####	2.Barcode Scanning:
 
