@@ -8,7 +8,7 @@ We are Team (team name), a group of third-year Computer Science and Software Eng
  3. Lemongang Monnamoloi
  4. Waleed Mahmood
  
- ####Project Goal:
+ #### Project Goal:
 *  Develop a Smart Inventory Management System for MTM Distributors to streamline operations and improve efficiency.
 
 
