@@ -30,6 +30,12 @@ The technical feasibility of this implementation will slightly differ depending 
 - The system aims to improve the efficiency of tracking stock, which reduces employee workload and labor costs.
   
 ## Operational feasibility
+The system’s intuitive interface caters to different user roles, making training quick and straightforward. It integrates smoothly with existing workflows, ensuring a transition period of just a few days.
+
+While the system is user-friendly, some advanced features may require skilled professionals to operate. Key risks include real-time tracking across multiple warehouses, which could be prone to human error at scale, and products without barcodes, which may complicate data storage.
+
+This study outlines the system’s strengths while addressing potential challenges, ensuring a balanced and realistic implementation plan.
+
 The system is user-friendly and practical for both admins and employees.
 Human Factor Considerations
 
