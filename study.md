@@ -26,7 +26,7 @@
 
 ## Economic feasibility
 - This system may be very less expensive since it's not for big companies.
-- 
+  
 ## Operational feasibility
 The system is user-friendly and practical for both admins and employees.
 Human Factor Considerations
