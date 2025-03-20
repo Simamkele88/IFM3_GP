@@ -1,4 +1,4 @@
-# Requirements Extraction
+# 2. Requirements Extraction
 
 ## Functional Requirements
 - The system should allow users to register and login.

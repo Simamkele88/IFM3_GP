@@ -1,8 +1,9 @@
-input files: 
+input-files: 
       -intro.md
       -requirements.md
       -usecases.md
-output file: webwizardsD1.pdf
+      -study.md
+output-file: PhantomSyndicate.pdf
 
 pdf-engine: xelatex  
 toc: true
