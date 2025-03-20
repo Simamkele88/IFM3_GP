@@ -9,12 +9,12 @@
     - Warehouse Space Tracking: A feature that helps the admin check available storage space in different warehouses.
   
 ##  Technical feasibility
+The technical feasibility of this implementation will slightly differ depending on the existing system in a warehouse. Warehouses that already have a system in place will need to change their hardware to adapt to the new system. Subsequent changes are also needed to implement the software with the hardware. Since the warehouse in question has no systems in place, adding the required hardware and software will cause no conflicts, therefore being simpler. The system will make use of commonly used hardware such as barcode scanners. There are no specialized equipment needed. Software requirements will include familiar technologies for the web platform and application
 ### Hardware Requirements
 
-    Server: A cloud-based or on-premises server for hosting the backend.
     Admin's Device: A PC/laptop with internet access.
     Employee’s Device: Mobile phones (Android/iOS) to access the mobile app.
-    Barcode Scanner (Optional): If automated stock scanning is needed.
+    Barcode Scanner: If automated stock scanning is needed.
 
 ### Software Requirements
 
@@ -25,7 +25,9 @@
     Version Control: GitHub for source code management.
 
 ## Economic feasibility
-- This system may be very less expensive since it's not for big companies.
+- The economic feasibility can be justified by low development costs, high financial benefits, and low operating expenses.
+- Existing hardware such as smartphones, computers, and barcode scanners are used with open-source frameworks that reduce licensing fees.
+- The system aims to improve the efficiency of tracking stock, which reduces employee workload and labor costs.
   
 ## Operational feasibility
 The system is user-friendly and practical for both admins and employees.
