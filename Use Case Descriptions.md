@@ -82,3 +82,5 @@
 
 **Inputs:** User email, email template.  
 **Outputs:** Email sent status, user notification.
+
+## Notification & Alert Subsystem
