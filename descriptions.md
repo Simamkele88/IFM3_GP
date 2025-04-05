@@ -42,7 +42,7 @@
 
 **Basic Flow:**   
 1. The owner selects an order from the list.
-2. The owner clicks the "Approve" button.
+2. The owner clicks the "**Approve**" button.
 3. The system checks if the order is still in pending status.
 4. The system updates the order status to "Accepted".
 5. The system triggers the Auto Generate PO use case.
@@ -52,50 +52,63 @@
    - System prevents re-approval and displays: "This order has already been processed."
 - **1b. Database error while retrieving orders:**
    - System prevents approval and shows: "Cannot approve order. Missing supplier details."
+  
 
-
-### Use case: Approve orders
+### Use case: Reject orders
 
 **Actor(s):** Tahir   
 **Descriptions:** Approve the recommended orders.
 **Preconditions:** 
 - The owner must have viewd the order.
-- The order must be in a pending state.
-  
-**Postcondition:** The order is approved and the purchased order is generated.
+- The order must be in a pending state.  
 
 **Input:**    
-**Output:**
-- Order status is updated to Rejected.
-- Supplier may receive a rejection notification.   
+**Output:**    
 
 **Basic Flow:**   
 1. The owner selects an order from the list.
-2. The owner clicks the "Reject" button.
+2. The owner clicks the "**Reject**" button.
 3. The system checks if the order is still in pending status.
-4. The system updates the order status to "Rejected".
+4. The system removes the order.
+   
 
 
-### Use case: Approve orders
+### Use case: Auto Generate PO
 
 **Actor(s):** Tahir   
-**Descriptions:** Approve the recommended orders.
+**Descriptions:** Auto generate an order based on the past orders.    
 **Preconditions:** 
-- The owner must have viewd the order.
-- The order must be in a pending state.
+- The order must be approved.
   
 **Postcondition:** The order is approved and the purchased order is generated.
 
 **Input:**    
 **Output:**
-- Order status is updated to Rejected.
-- Supplier may receive a rejection notification.   
+- The system sends the PO to the supplier.
+- The system notifies the owner that the PO has been generated successfully.
 
 **Basic Flow:**   
-1. The owner selects an order from the list.
-2. The owner clicks the "Reject" button.
-3. The system checks if the order is still in pending status.
-4. The system updates the order status to "Rejected".
+1. The system retrieves order details.
+2. The system generates a Purchase Order (PO) with:
+   - Order ID
+   - Supplier details
+   - List of approved items 
+   - Payment terms
+3. The system sends the PO to the supplier.
+4. The system notifies the owner that the PO has been generated successfully.
+   
+   
+**Extensions:**   
+- **4a. PO generation fails due to missing details:**
+   - System logs an error and alerts the owner: "Purchase Order generation failed. Please check order details."
+- **4b. Supplier system is unavailable:**
+   - PO remains in pending state, and system retries later.
+
+
+
+
+
+
 
    
 
