@@ -79,15 +79,11 @@
 **Actor(s):** Tahir   
 **Descriptions:** Allows the owner to remove the warehouse from the system.      
 **Include:** View warehouse.  
-**Preconditions:** 
-- The order must be approved.
-  
-**Postcondition:** The order is approved and the purchased order is generated.
+**Preconditions:** Owner has selected a warehouse from the list.
 
 **Input:**    
 **Output:**
-- The system sends the PO to the supplier.
-- The system notifies the owner that the PO has been generated successfully.
+
 
 **Basic Flow:**   
 1. Tahir selects a warehouse from the "View Warehouse" list.
