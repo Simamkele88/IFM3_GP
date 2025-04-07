@@ -67,7 +67,7 @@
 
 
 ### Use Case: Send Confirmation Email
-**Actor(s):** System 
+**Actor(s):** Email service, System 
 **Description:** Sends a confirmation email after registration or password reset.   
 **Preconditions:** User completes registration or requests password reset.  
 **Postconditions:** The confirmation email is successfully sent and received by the user.  
@@ -83,4 +83,4 @@
 **Inputs:** User email, email template.  
 **Outputs:** Email sent status, user notification.
 
-## Notification & Alert Subsystem
+## Repairs and damages Subsystem
