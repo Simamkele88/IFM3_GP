@@ -83,6 +83,8 @@
 **Inputs:** User email, email template.  
 **Outputs:** Email sent status, user notification.
 
+
+
 ## Repairs and damages Subsystem
 ### Use Case: View Suppliers Returns
 **Inputs:** N/A  
@@ -94,8 +96,8 @@
 2. System retrieves return records.
 3. System displays returns
 
-**Extensions:**
-2a. No returns found
+**Extensions:**  
+2a. No returns found.
 1. System notifies Tahir or Tahir's assistant.
 
 
@@ -113,13 +115,13 @@
 6. System notifies the supplier.
 7. System updates inventory.  
 
-**Extensions:**
-5a. Invalid input data
+**Extensions:**  
+5a. Invalid input data.
 1. System rejects input and prompts correction.
-5b. Duplicate entry (Return already exists)
+5b. Duplicate entry (Return already exists).
 1. Alert Tahir's assistant.
-5c. Product does not exist in the database
-1. Alert Tahir's assistant and prompts for another entry
+5c. Product does not exist in the database.
+1. Alert Tahir's assistant and prompts for another entry.
 
 
 ### Use Case: View Customer Repairs
@@ -132,7 +134,7 @@
 2. System retrieves repair records.
 3. System displays repairs (e.g., product details, status, customer name).
 
-**Extensions:**
+**Extensions:**  
 2a. No customer repairs found.
 1. System notifies Tahir or Tahir's assistant.
 
@@ -151,16 +153,16 @@
 6. Assistant notifies the customer.
 7. System updates inventory.  
 
-**Extensions:**
+**Extensions:**  
 5a. Invalid input data.
 1. System rejects input and prompts correction.
-5b. Duplicate entry (Repair already exists)
+5b. Duplicate entry (Repair already exists).
 1. Alert Tahir's assistant.
 5c. Product not under warranty.
-1. Alert Tahir's assistant and prompts for another entry
+1. Alert Tahir's assistant and prompts for another entry.
 5d. Customer does not exists.
 1. Reject entry.
-2. Notify Tahir's assistant
+2. Notify Tahir's assistant.
 
 
 ### Use Case: Notify Customer //This user case don't make sense because the assistant use the email which is not part of the system
