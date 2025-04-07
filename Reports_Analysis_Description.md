@@ -1,7 +1,7 @@
 ## Export documents subsystem
 
-### Use case: Acquire data
-**Input:** invoice details, inventory information.
+### Use case: Generate Stock Reports
+**Input:** inventory data.
 
 **Output:**
 
