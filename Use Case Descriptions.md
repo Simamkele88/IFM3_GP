@@ -116,12 +116,14 @@
 7. System updates inventory.  
 
 **Extensions:**  
-5a. Invalid input data.
-1. System rejects input and prompts correction.
-5b. Duplicate entry (Return already exists).
-1. Alert Tahir's assistant.
-5c. Product does not exist in the database.
-1. Alert Tahir's assistant and prompts for another entry.
+5a. Invalid input data.  
+    1. System rejects input and prompts correction.  
+
+5b. Duplicate entry (Return already exists).  
+    1. Alert Tahir's assistant.  
+
+5c. Product does not exist in the database.  
+    1. Alert Tahir's assistant and prompts for another entry.
 
 
 ### Use Case: View Customer Repairs
@@ -154,15 +156,15 @@
 7. System updates inventory.  
 
 **Extensions:**  
-5a. Invalid input data.
-1. System rejects input and prompts correction.
-5b. Duplicate entry (Repair already exists).
-1. Alert Tahir's assistant.
-5c. Product not under warranty.
-1. Alert Tahir's assistant and prompts for another entry.
-5d. Customer does not exists.
-1. Reject entry.
-2. Notify Tahir's assistant.
+5a. Invalid input data.  
+    1. System rejects input and prompts correction.  
+5b. Duplicate entry (Repair already exists).  
+    1. Alert Tahir's assistant.  
+5c. Product not under warranty.  
+    1. Alert Tahir's assistant and prompts for another entry.  
+5d. Customer does not exists.  
+    1. Reject entry.  
+    2. Notify Tahir's assistant.  
 
 
 ### Use Case: Notify Customer //This user case don't make sense because the assistant use the email which is not part of the system
