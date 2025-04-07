@@ -35,11 +35,9 @@
 
 **Actors:** Owner, assistant
 
-**Input:**
-- Generated report
+**Input:** Generated report
 
-**Output:**
-- PDF file report
+**Output:** PDF file report
 
 **Preconditions:**
 - An existing report that has been generated.
