@@ -167,13 +167,25 @@
     2. Notify Tahir's assistant.  
 
 
-### Use Case: Notify Customer //This user case don't make sense because the assistant use the email which is not part of the system
+### Use Case: Notify Customer
 **Inputs:** Repair ID, customer contact details.  
 **Outputs:** Notification sent confirmation.  
 **Preconditions:** Repair request is logged or repair updates.  
 
 **Basic Path:**
-1. Tahir's assistant selects "Message customers."
+1. Tahir's assistant selects "Notify customers."
 2. System prompts for customer ID and product details.
-3. Createas an email with repair details.
-4. Email service delivers the message
+3. Assistant fills in the required information.
+4. System validates information.
+5. Assistant writes the message.
+6. Email service delivers the message
+
+**Extensions:**  
+5a. Invalid input data.  
+    1. System rejects input and prompts correction.  
+5d. Product does not exists.  
+    1. Reject entry.  
+    2. Notify Tahir's assistant.  
+5d. Customer does not exists.  
+    1. Reject entry.  
+    2. Notify Tahir's assistant.  
