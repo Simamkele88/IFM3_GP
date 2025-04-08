@@ -1,4 +1,4 @@
-## Order Management Subsystem 
+## Warehouse Management Subsystem 
 
 ### Use case: View warehouses
 
