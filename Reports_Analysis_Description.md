@@ -18,16 +18,17 @@
 1. User navigates to "Reports and Analysis" tab.
 2. System displays report options.
 3. User selects desired option(s).
-4. User selects "generate report".
-5. System queries relevant data from the database.
-6. System generates a report.
-7. User confirms generation.
-8. Document is stored in the system.
+4. User selects "Create report".
+5. User selects the type of report.
+6. The user chooses desired report data
+7. System queries relevant data from the database.
+8. System generates a report.
+9. User confirms generation.
+10. Document is stored in the system.
 
 **Extensions:** <br>
-5a. No stock data is available.
+7a. Data is unavailable.
 1. System notifies the user to wait or try again later.
-2. User can retry or cancel.
 
 
 ### Use case: Export Document
@@ -46,7 +47,9 @@
 - The report is saved as a PDF file and is available for download.
 
 **Flow:**
-1. User selects "Export as PDF".
+1. User clicks "Download".
 2. System exports the file into PDF.
-3. System makes file available for download
-4. User can select "Download" to download the file.
+3. System generates file.
+4. System sends file to the user.
+5. User receives file.
+6. User views file.
