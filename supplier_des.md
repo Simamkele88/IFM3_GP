@@ -95,7 +95,7 @@
    
 **Extensions:**   
 - **a. User cancels deletion:**
-   - System aborts the deletion and returns to the previous view. order details."
+   - System aborts the deletion and returns to the previous view supplier details."
 - **5a. supplier is linked to existing inventory or records:**
    - System prevents deletion and shows message: "supplier cannot be deleted as it is linked to active inventory."
 

@@ -20,7 +20,7 @@
 **Extensions:**   
 - **1.a No warehouses available**
    - System displays a message: "No warehouses available."
-- **1b. Database error while retrieving orders:**
+- **1b. Database error while retrieving warehouses:**
    - System logs the error and shows: "Unable to load warehouses. Please try again later."
 
 
@@ -95,7 +95,7 @@
    
 **Extensions:**   
 - **a. User cancels deletion:**
-   - System aborts the deletion and returns to the previous view. order details."
+   - System aborts the deletion and returns to the previous view warehouse details."
 - **5a. Warehouse is linked to existing inventory or records:**
    - System prevents deletion and shows message: "Warehouse cannot be deleted as it is linked to active inventory."
 
