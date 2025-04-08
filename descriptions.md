@@ -2,22 +2,22 @@
 
 ### Use case: View orders
 
-**Actor(s):** Tahir   
-**Description:** Allows the owner to be able to view orders and accept/reject orders that were recommended based on the quantity left, He/She can also auto generate to purchase an order.   
+**Actor(s):** Tahir, Assistant  
+**Description:** Allows the user to be able to view orders.     
 **Preconditions:** 
-- User is signed in as an owner. 
+- User is signed in as an owner or assistant. 
 - There must be existing orders.
 
 
-**Postcondition:** The owner has reviewed the orders and can decide to approve or reject them    
+**Postcondition:** The user must be able to see the list of orders if available. 
 
 **Input:**   
 **Output:** List of orders.     
 
 **Basic Flow:**
-1. The owner selects the "View Orders" option.   
+1. The user selects the "View Orders" option.   
 2. The system retrieves and displays the list of orders.   
-3. The owner clicks on a specific order to see its details.  
+3. The user clicks on a specific order to see its details.  
 4. The system shows the order information.
 
 **Extensions:**   
@@ -32,10 +32,10 @@
 **Actor(s):** Tahir   
 **Descriptions:** Approve the recommended orders.
 **Preconditions:** 
-- The owner must have viewd the order.
+- The owner must have viewed the order.
 - The order must be in a pending state.
   
-**Postcondition:** The order is approved and the purchased order is generated.
+**Postcondition:** The order is approved and the purchased order is created and sent to supplier.
 
 **Input:**    
 **Output:**    
@@ -44,22 +44,20 @@
 1. The owner selects an order from the list.
 2. The owner clicks the "**Approve**" button.
 3. The system checks if the order is still in pending status.
-4. The system updates the order status to "Accepted".
-5. The system triggers the Auto Generate PO use case.
+4. The system updates the order status.
+
    
 **Extensions:**   
 - **2a. Order is already approved:**
    - System prevents re-approval and displays: "This order has already been processed."
-- **1b. Database error while retrieving orders:**
-   - System prevents approval and shows: "Cannot approve order. Missing supplier details."
   
 
 ### Use case: Reject orders
 
 **Actor(s):** Tahir   
-**Descriptions:** Approve the recommended orders.
+**Descriptions:** Reject the recommended orders.
 **Preconditions:** 
-- The owner must have viewd the order.
+- The owner must have viewed the order.
 - The order must be in a pending state.  
 
 **Input:**    
@@ -71,40 +69,46 @@
 3. The system checks if the order is still in pending status.
 4. The system removes the order.
    
+### Use case: Add purchase order
 
-
-### Use case: Auto Generate PO
-
-**Actor(s):** Tahir   
-**Descriptions:** Auto generate an order based on the past orders.    
+**Actor(s):** Assistant    
+**Description:** Add a new purchase and send it to the owner.   
 **Preconditions:** 
-- The order must be approved.
-  
-**Postcondition:** The order is approved and the purchased order is generated.
+- Must have logged in as an assistant.
 
-**Input:**    
-**Output:**
-- The system sends the PO to the supplier.
-- The system notifies the owner that the PO has been generated successfully.
 
-**Basic Flow:**   
-1. The system retrieves order details.
-2. The system generates a Purchase Order (PO) with:
-   - Order ID
-   - Supplier details
-   - List of approved items 
-   - Payment terms
-3. The system sends the PO to the supplier.
-4. The system notifies the owner that the PO has been generated successfully.
-   
-   
+**Input:** Order details.    
+**Output:**    
+
+**Basic Flow:**  
+1. The assistant clicks "Purchase order".
+2. The system shows an order form for completion.
+3. Assistant completes the order details and click submit.
+4. The system validates the information and send the order to the owner.
+
+
 **Extensions:**   
-- **4a. PO generation fails due to missing details:**
-   - System logs an error and alerts the owner: "Purchase Order generation failed. Please check order details."
-- **4b. Supplier system is unavailable:**
-   - PO remains in pending state, and system retries later.
+- **4.a Missing information**
+   - System shows an error message and allows the assistant to enter missing details or cancel.
+- **4.b Incorrect information**
+   - System tells the assistant about the incorrect information enter and tell them to put relevant information or cancel.
+
+### Use case: Set Re-order points
+
+**Actor(s):** Assistant    
+**Description:** Set a re-order point for a certain inventory.   
+**Preconditions:** 
+- Must have logged in as an assistant.
 
 
+**Input:** Reorder levels.  
+**Output:**    
+
+**Basic Flow:**  
+1. The assistant clicks "Re-order points".
+2. The system shows all the available inventory.
+3. Assistant selects one of the items in the inventory and set re-order point.
+5. The system save the re-order level and input in the inventory.
 
 
 
