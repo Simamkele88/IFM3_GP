@@ -66,22 +66,35 @@
 **Outputs:** Password reset confirmation.
 
 
-### Use Case: Send Confirmation Email
-**Actor(s):** Email service, System 
-**Description:** Sends a confirmation email after registration or password reset.   
-**Preconditions:** User completes registration or requests password reset.  
-**Postconditions:** The confirmation email is successfully sent and received by the user.  
+### Use Case: Send Confirmation Email   
+**Inputs:** User email.  
+**Outputs:** Email sent status, user notification.  
+**Preconditions:** User completes registration.    
 
 **Basic Path:**  
 1. System triggers email generation.  
-2. System sends email with link (activation/reset).
-3. Email service delivers message.
+2. System sends an email with activation link.
+3. Email service delivers message. 
 
-**Alternate Paths:**
-- Email failed: System retries or logs error. 
+**Extensions:**  
+2a. Email delivery failed.  
+1. System displays error.
 
-**Inputs:** User email, email template.  
-**Outputs:** Email sent status, user notification.
+
+### Use Case: Send Reset Link   
+**Inputs:** User email.  
+**Outputs:** Email sent status.  
+**Preconditions:** User requests password reset.    
+
+**Basic Path:**  
+1. System triggers email generation.  
+2. System sends email with reset link.
+3. Email service delivers message. 
+
+**Extensions:**  
+2a. Email delivery failed.  
+1. System displays error.
+
 
 
 
