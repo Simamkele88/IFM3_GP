@@ -1,0 +1,14 @@
+input files: 
+      -intro.md
+      -requirements.md
+      -usecases.md
+output file: T22D2.pdf
+
+pdf-engine: xelatex  
+toc: true
+
+
+metadata:
+  title: "Deliverable 2"
+  author: "Phantom Syndicates"
+  date: "2025-04-11"
