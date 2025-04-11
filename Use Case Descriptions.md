@@ -1,10 +1,9 @@
 # USE CASE DESCRIPTIONS
 ## Login and register substem
 ### Use Case: Register
-**Actor(s):** Tahir, Tahir's assistant, Warehouse Staff  
-**Description:** Allows users to create an account in the system.  
-**Preconditions:** User is not registered.  
-**Postconditions:** A new user account is created, and a confirmation email is sent.  
+**Inputs:** User credentials (Email, password, role, name, reg key).  
+**Outputs:** New user account, confirmation email  
+**Preconditions:** User is not registered.    
 
 **Basic Path:**  
 1. User accesses the login page.
@@ -15,19 +14,17 @@
 6. System sends confirmation email
 7. System confirms successful registration and redirects the user to the log in page.  
 
-**Alternate Paths:**
-- Invalid data: System prompts user to correct input errors.
-- Email already exists: System notifies user and suggests login.
-
-**Inputs:** User credentials (Email, password, role, name, reg key).  
-**Outputs:** New user account, confirmation email  
+**Extensions:**
+5a. Invalid data.  
+1. System prompts user to correct input errors.  
+5b. Email already exists.  
+1. System notifies user and suggests login.  
 
 
 ### Use Case: Log in
-**Actor(s):** Tahir, Tahir's assistant, Warehouse Staff  
-**Description:** Authenticates users to access the system.  
-**Preconditions:** User has a registered account.  
-**Postconditions:** The user is successfully logged into the system and granted access to their account.  
+**Inputs:** User credentials (Email, password).  
+**Outputs:** Access to dashboard, session token.    
+**Preconditions:** User has a registered account.   
 
 **Basic Path:**  
 1. User selects "Log in".
@@ -36,19 +33,15 @@
 4. System verifies credentials.
 5. System grants access based on role and redirects to the home page.  
 
-**Alternate Paths:**
-- Incorrect credentials: System displays error and allows retry.
-- Forgotten password: Redirects to "Reset password".
-
-**Inputs:** User credentials (Email, password).  
-**Outputs:** Access to dashboard, session token.
+**Extensions:**
+4a. Incorrect credentials  
+1. System displays error and allows retry.  
 
 
 ### Use Case: Reset Password
-**Actor(s):** Tahir, Tahir's assistant, Warehouse Staff, System  
-**Description:** Resets a user’s password via email confirmation.   
+**Inputs:** Registered email, new password.  
+**Outputs:** Password reset confirmation.   
 **Preconditions:** User is registered but cannot log in.  
-**Postconditions:** The user receives a password reset link and can set a new password.  
 
 **Basic Path:**  
 1. User selects the "Forgot Password" option on the login page.  
@@ -58,12 +51,11 @@
 5. User follows link and sets new password.
 6. System confirms password update.  
 
-**Alternate Paths:**
-- Email not found: System notifies user.
-- Expired link: System regenerates reset link.  
-
-**Inputs:** Registered email, new password.  
-**Outputs:** Password reset confirmation.
+**Extensions:**
+3a. Email not found  
+1. System notifies user.  
+5a. Expired link  
+1. System regenerates reset link.  
 
 
 ### Use Case: Send Confirmation Email   
