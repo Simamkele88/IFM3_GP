@@ -14,11 +14,11 @@
 6. System sends confirmation email
 7. System confirms successful registration and redirects the user to the log in page.  
 
-**Extensions:**
+**Extensions:**  
 5a. Invalid data.  
-1. System prompts user to correct input errors.  
+    1. System prompts user to correct input errors.  
 5b. Email already exists.  
-1. System notifies user and suggests login.  
+    1. System notifies user and suggests login.  
 
 
 ### Use Case: Log in
@@ -33,9 +33,9 @@
 4. System verifies credentials.
 5. System grants access based on role and redirects to the home page.  
 
-**Extensions:**
+**Extensions:**  
 4a. Incorrect credentials  
-1. System displays error and allows retry.  
+    1. System displays error and allows retry.  
 
 
 ### Use Case: Reset Password
@@ -51,11 +51,11 @@
 5. User follows link and sets new password.
 6. System confirms password update.  
 
-**Extensions:**
+**Extensions:**  
 3a. Email not found  
-1. System notifies user.  
+    1. System notifies user.  
 5a. Expired link  
-1. System regenerates reset link.  
+    1. System regenerates reset link.  
 
 
 ### Use Case: Send Confirmation Email   
@@ -70,7 +70,7 @@
 
 **Extensions:**  
 2a. Email delivery failed.  
-1. System displays error.
+    1. System displays error.
 
 
 ### Use Case: Send Reset Link   
@@ -85,7 +85,7 @@
 
 **Extensions:**  
 2a. Email delivery failed.  
-1. System displays error.
+    1. System displays error.
 
 
 
