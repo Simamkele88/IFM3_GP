@@ -98,7 +98,7 @@
                 <a href="new_order.html">+ New order</a>
             </span>
         </div>
-        <hr>
+        
         <!-- Boxes for the reports and everything-->
         <div class="report-container">
             <div class="report-box">
@@ -122,9 +122,97 @@
         <!-- For the search bar and the -->
          <div class="div-container">
                 <input type="text" placeholder="Search order by ID or customer...">
-                <p>All Status <span style="border-radius:50%;background-color:red;padding:2px;">24</span></p>
-                <p>All Items <span style="border-radius:50%;background-color:red;padding:2px;">30</span></p>
+                <p>All Status   <span class="badge" style="margin-left:5px;">24</span></p>
+                <p>All Items  <span class="badge" style="margin-left:5px;">30</span></p>
          </div>
+
+         <!-- Tables for orders -->
+         <table class="order-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Payment</th>
+                    <th>Warehouse</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>order-001</td>
+                    <td>John Doe</td>
+                    <td>23 April 2024</td>
+                    <td><span class="status status-in-transit">In transit</span></td>
+                    <td><span class="payment payment-paid">Paid</span></td>
+                    <td>WAR-001</td>
+                    <td><button class="action-btn btn-view">View</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>order-002</td>
+                    <td>Jane Smith</td>
+                    <td>22 April 2024</td>
+                    <td><span class="status status-delivered">Delivered</span></td>
+                    <td><span class="payment payment-paid">Paid</span></td>
+                    <td>WAR-002</td>
+                    <td><button class="action-btn btn-details">Details</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>order-003</td>
+                    <td>Robert Johnson</td>
+                    <td>21 April 2024</td>
+                    <td><span class="status status-processing">Processing</span></td>
+                    <td><span class="payment payment-pending">Pending</span></td>
+                    <td>WAR-001</td>
+                    <td><button class="action-btn btn-edit">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>order-004</td>
+                    <td>Emily Davis</td>
+                    <td>20 April 2024</td>
+                    <td><span class="status status-cancelled">Cancelled</span></td>
+                    <td><span class="payment payment-refunded">Refunded</span></td>
+                    <td>WAR-003</td>
+                    <td><button class="action-btn btn-report">Report</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>order-005</td>
+                    <td>Michael Wilson</td>
+                    <td>19 April 2024</td>
+                    <td><span class="status status-shipped">Shipped</span></td>
+                    <td><span class="payment payment-paid">Paid</span></td>
+                    <td>WAR-002</td>
+                    <td><button class="action-btn btn-track">Track</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>order-006</td>
+                    <td>Sarah Brown</td>
+                    <td>18 April 2024</td>
+                    <td><span class="status status-returned">Returned</span></td>
+                    <td><span class="payment payment-partial-refund">Partial Refund</span></td>
+                    <td>WAR-003</td>
+                    <td><button class="action-btn btn-process">Process</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>order-007</td>
+                    <td>David Miller</td>
+                    <td>17 April 2024</td>
+                    <td><span class="status status-pending">Pending</span></td>
+                    <td><span class="payment payment-unpaid">Unpaid</span></td>
+                    <td>WAR-001</td>
+                    <td><button class="action-btn btn-remind">Remind</button></td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <script src="site.js"></script>
     </body>
