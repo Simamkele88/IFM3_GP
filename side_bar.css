@@ -1,0 +1,204 @@
+/* Theme Variables */
+:root {
+    /* Light Mode Defaults */
+    --bg-color: #f5f5f5;
+    --text-color: #333;
+    --header-bg: #ffffff;
+    --sidebar-bg: #151b23;
+    --sidebar-text: #ffffff;
+    --nav-hover: #2d3748;
+    --nav-active: #3a9cd9;
+    --border-color: #e1e1e1;
+    --search-bg: #ffffff;
+    --search-border: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --badge-bg: #e74c3c;
+    --badge-text: #fff;
+  }
+  
+  /* Dark Mode Overrides */
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --header-bg: #1e1e1e;
+    --sidebar-bg: #0d1117;
+    --nav-hover: #2d3748;
+    --nav-active: #1e88e5;
+    --border-color: #333;
+    --search-bg: #2d2d2d;
+    --search-border: #444;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Main Layout Structure */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 70px 1fr;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Header Styles */
+  .header {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 5px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    max-width: 500px;
+    margin-right: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px 15px;
+    border: 1px solid var(--search-border);
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    background-color: var(--search-bg);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+  }
+  
+  .header-date {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-right: auto;
+    padding-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    opacity: 0.8;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+  }
+  
+  .profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #3a9cd9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .user-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logo-container {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .nav-menu {
+    flex-grow: 1;
+  }
+  
+  .nav-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: var(--nav-hover);
+  }
+  
+  .nav-item.active {
+    background-color: var(--nav-active);
+  }
+  
+  .nav-item i {
+    width: 20px;
+    text-align: center;
+  }
+  
+  .nav-item span {
+    font-size: 14px;
+  }
+  
+  .badge {
+    background-color: var(--badge-bg);
+    color: var(--badge-text);
+    border-radius: 10px;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: auto;
+  }
+  
+  /* Bottom section for logout */
+  .sidebar-footer {
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  /* Main Content Area */
+  .main-content {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+    background-color: var(--bg-color);
+    overflow-y: auto;
+    transition: background-color 0.3s ease;
+  }
