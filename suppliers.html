@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Customer orders</title>
+        <title>Supplier Management</title>
         <link rel="stylesheet" href="side_bar.css">
         <link rel="stylesheet" href="c_orders.css">
         <link rel="icon" type="image/png" href="favicon.png">
@@ -86,13 +86,14 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <h1 style="margin-top:0px;"> Customer Orders</h1>
+        <h1 style="margin-top:0px;"> Supplier Management</h1>
         
         <!-- For the search bar and the -->
          <div class="div-container">
                 <input type="text" placeholder="Search order by ID or customer...">
-                <p>All Status   <span class="badge" style="margin-left:5px;">24</span></p>
-                <p>All Items  <span class="badge" style="margin-left:5px;">30</span></p>
+                <p>All Categories   <span class="badge" style="margin-left:5px;">24</span></p>
+                <p>All Statuses  <span class="badge" style="margin-left:5px;">30</span></p>
+                <p>+ New Supplier</p>
          </div>
 
          <!-- Tables for orders -->
@@ -100,12 +101,12 @@
             <thead>
                 <tr>
                   
-                    <th>Order ID</th>
-                    <th>Customer</th>
-                    <th>Date</th>
+                    <th>Supplier</th>
+                    <th>Contact Info</th>
+                    <th>Category</th>
                     <th>Status</th>
-                    <th>Payment</th>
-                    <th>Warehouse</th>
+                    <th>Last order</th>
+                    <th>Action</th>
                    
                 </tr>
             </thead>
