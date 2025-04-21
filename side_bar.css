@@ -211,6 +211,12 @@ body {
   font-size: 0.9375rem;
 }
 
+
+.nav-item a{
+  text-decoration: none;
+  color: #f7fafc;
+}
+
 .badge {
   background-color: var(--badge-bg);
   color: var(--badge-text);
