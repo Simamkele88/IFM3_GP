@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d1117;
+    color: white;
+}
+
+.outer-container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: -100px;
+
+}
+
+.logo-heading {
+    margin-bottom: 20px;
+}
+
+.circle-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.login-box {
+    margin: 0 auto;
+}
+
+.login-container {
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #151b23;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.log-reg-heading {
+    color: white;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.log-reg-label {
+    display: block;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+.log-reg-input {
+    height: 25px;
+    width: 200px;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin: 5px 0;
+    background-color: #0d1117;
+    color: white;
+    padding-left: 8px;
+}
+
+.log-reg-button {
+    width: 210px;
+    height: 33px;
+    border-radius: 7px;
+    background-color: rgb(9, 158, 207);
+    border: 2px solid black;
+    margin-top: 10px;
+    color: white
+}
+
+.alternative-logs {
+
+    border: 2px solid #151b23;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: center;
+    width: 310px;
+    margin-left: 31px;
+}
+
+.alternative-logs a {
+    text-decoration: none
+}
+
+
+#emailError {
+    color: red;
+    font-size: 15px;
+    margin: 5px 0;
+    height: 18px;
+}
+
+.forgot-password {
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}

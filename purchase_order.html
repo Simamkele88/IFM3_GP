@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Purchase Orders</title>
+        <link rel="stylesheet" href="side_bar.css">
+        <link rel="stylesheet" href="purchase.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="favicon.png" alt="MTM Logo" class="logo">
+        </div>
+        
+        <div class="nav-menu">
+            <div class="nav-item active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span><a href="dashboard.html">Dashboard</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-boxes"></i>
+                <span><a href="inventory.html">Inventory</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span><a href="purchase_order.html">Purchase Orders</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span><a href="customer_orders.html">Customer Orders</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-truck"></i>
+                <span><a href="suppliers.html">Suppliers</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span><a href="reports_damages.html">Reports and Damages</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-chart-bar"></i>
+                <span><a href="reports.html">Reports</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-bell"></i>
+                <span><a href="notifications.html">Notifications</a></span>
+                <span class="badge">3</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span><a href="settings.html">Settings</a></span>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <div class="nav-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Log Out</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        
+        <div class="header-date">
+            <span id="current-date">Monday, June 10, 2024</span>
+        </div>
+        
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i> <!-- Default shows moon (dark mode available) -->
+        </button>
+        
+        <div class="user-profile">
+            <div class="profile-icon">JD</div>
+            <span class="user-name">John Doe</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 style="margin-top:0px;"> Purchase Orders</h1>
+        <!-- Handles the page description and the buttons of suppliers-->
+        <div class="des-changes">
+            <input type="text" placeholder="Search order by ID...">
+            <a href="newPurchase.aspx" class="base-buttons" >+ New Order</a>
+        </div>
+        <div class="outer-container">
+            <div class="side-content">
+                <p>Product Status</p>
+                <div class="side-buttons">
+                    <button class="base-buttons">Quote(63)</button>
+                    <button class="base-buttons">Shipped(23)</button>
+                    <button class="base-buttons">All(10)</button>
+                    <button class="base-buttons">Completed(30)</button>
+                </div>
+                <div class="side-filter">
+                    <p>Filter by</p>
+                    <div class="filter-group">
+                        <label for="location">Location:</label>
+                        <select id="location" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="kzn">KwaZulu-Natal</option>
+                            <option value="gp">Guateng</option>
+                            <option value="fs">Free State</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="date">Date From:</label>
+                        <input type="date" id="date" class="filter-select" placeholder="YYYY/MM/DD">
+                    </div>
+                    <div class="filter-group">
+                        <label for="date">Date To:</label>
+                        <input type="date" id="date" class="filter-select" placeholder="YYYY/MM/DD">
+                    </div>
+                
+                    <div class="filter-group">
+                        <label for="supplier">Supplier:</label>
+                        <select id="supplier" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="lenovo">Lenovo</option>
+                            <option value="hisense">Hisense</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="status">Product Status</label>
+                        <select id="status" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="pending">Pending</option>
+                            <option value="shipped">Shipped</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                    </div>
+                    <div class="al-button">
+                        <button id="apply-filters" class="base-buttons">Apply Filters</button>
+                        <button id="reset-filters" class="base-buttons">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+            <div class="order-content">
+                <div class="order-content">
+                    <div class="order-group">
+                        <div class="line1">
+                            <div class="left-items">
+                                <p class="order-id">Order #1234</p>
+                                <h4 class="p-name">Premium Laptop</h4>
+                            </div>
+                            <div class="right-items">
+                                <p class="status">Processing</p>
+                                <h4 class="price">R50,000.00</h4>
+                                <p class="paid">Unpaid</p>
+                            </div>
+                        </div>
+                        <div class="line2">
+                            <div class="left-items">
+                                <p class="supplier-name">Lenovo</p>
+                                <p class="address">15 Annadale st,Johannesburg<p>
+                            </div>
+                            <div class="right-items">
+                                <button class="base-buttons" style="background-color:#2196F3">Accept</button>
+                                <button class="base-buttons" style="background-color:#F44336">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-group">
+                        <div class="line1">
+                            <div class="left-items">
+                                <p class="order-id">Order #1234</p>
+                                <h4 class="p-name">Premium Laptop</h4>
+                            </div>
+                            <div class="right-items">
+                                <p class="status">Processing</p>
+                                <h4 class="price">R50,000.00</h4>
+                                <p class="paid">Unpaid</p>
+                            </div>
+                        </div>
+                        <div class="line2">
+                            <div class="left-items">
+                                <p class="supplier-name">Lenovo</p>
+                                <p class="address">15 Annadale st,Johannesburg<p>
+                            </div>
+                            <div class="right-items">
+                                <button class="base-buttons" style="background-color:#2196F3">Accept</button>
+                                <button class="base-buttons" style="background-color:#F44336">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-group">
+                        <div class="line1">
+                            <div class="left-items">
+                                <p class="order-id">Order #1234</p>
+                                <h4 class="p-name">Premium Laptop</h4>
+                            </div>
+                            <div class="right-items">
+                                <p class="status">Processing</p>
+                                <h4 class="price">R50,000.00</h4>
+                                <p class="paid">Unpaid</p>
+                            </div>
+                        </div>
+                        <div class="line2">
+                            <div class="left-items">
+                                <p class="supplier-name">Lenovo</p>
+                                <p class="address">15 Annadale st,Johannesburg<p>
+                            </div>
+                            <div class="right-items">
+                                <button class="base-buttons" style="background-color:#2196F3">Accept</button>
+                                <button class="base-buttons" style="background-color:#F44336">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="site.js"></script>
+    </body>
+</html>

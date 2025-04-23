@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reports</title>
+        <link rel="stylesheet" href="side_bar.css">
+        <link rel="stylesheet" href="reports.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="favicon.png" alt="MTM Logo" class="logo">
+        </div>
+        
+        <div class="nav-menu">
+            <div class="nav-item active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span><a href="dashboard.html">Dashboard</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-boxes"></i>
+                <span><a href="inventory.html">Inventory</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span><a href="purchase_order.html">Purchase Orders</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-shopping-cart"></i>
+                <span><a href="customer_orders.html">Customer Orders</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-truck"></i>
+                <span><a href="suppliers.html">Suppliers</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span><a href="reports_damages.html">Reports and Damages</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-chart-bar"></i>
+                <span><a href="reports.html">Reports</a></span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-bell"></i>
+                <span><a href="notifications.html">Notifications</a></span>
+                <span class="badge">3</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-cog"></i>
+                <span><a href="settings.html">Settings</a></span>
+            </div>
+        </div>
+        
+        <div class="sidebar-footer">
+            <div class="nav-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Log Out</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        
+        <div class="header-date">
+            <span id="current-date">Monday, June 10, 2024</span>
+        </div>
+        
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i> <!-- Default shows moon (dark mode available) -->
+        </button>
+        
+        <div class="user-profile">
+            <div class="profile-icon">JD</div>
+            <span class="user-name">John Doe</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h1 style="margin-top:0px;"> Purchase Orders</h1>
+        <div class="report-buttons">
+            <a href="NewReport.aspx" class="base-buttons">Create Report</a>
+            <a href="ScheduleReport.aspx" style="margin-left: 20px;" class="base-buttons">Schedule Report</a>
+        </div>
+        <!-- Add this inside your <main class="main-content"> section, after the report-buttons div -->
+<div class="report-container">
+    <div class="report-card">
+        <h3>Monthly sales report</h3>
+        <p>Detailed breakdown of sales performance by product category and region</p>
+        <div class="report-footer">
+            <span class="update-date">Last updated: day/month/year</span>
+            <button class="download-btn">Download</button>
+        </div>
+    </div>
+    
+    <div class="report-card">
+        <h3>Inventory status report</h3>
+        <p>Current inventory levels, restock alerts and slow moving items.</p>
+        <div class="report-footer">
+            <span class="update-date">Last updated: day/month/year</span>
+            <button class="download-btn">Download</button>
+        </div>
+    </div>
+    
+    <div class="report-card">
+        <h3>Shipping performance</h3>
+        <p>Analysis of shipping times, carrier performance, and delivery issues</p>
+        <div class="report-footer">
+            <span class="update-date">Last updated: day/month/year</span>
+            <button class="download-btn">Download</button>
+        </div>
+    </div>
+    
+    <div class="report-card">
+        <h3>Customer insights</h3>
+        <p>Customer demographics, purchasing patterns, and retention metrics</p>
+        <div class="report-footer">
+            <span class="update-date">Last updated: day/month/year</span>
+            <button class="download-btn">Download</button>
+        </div>
+    </div>
+</div>
+    </main>
+    <script src="site.js"></script>
+    </body>
+</html>

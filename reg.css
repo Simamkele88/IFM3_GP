@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d1117;
+    color: white;
+}
+
+.outer-container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.logo-heading {
+    margin-bottom: 20px;
+}
+
+.circle-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.register-box {
+    margin: 0 auto;
+}
+
+.register-container {
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #151b23;
+    text-align: center;
+    margin: 0 auto;
+    width: 450px;
+}
+
+.log-reg-heading {
+    color: white;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    width: 48%;
+    text-align: left;
+}
+
+.log-reg-label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.log-reg-input {
+    height: 25px;
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: #0d1117;
+    color: white;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+.log-reg-button {
+    width: 100%;
+    height: 33px;
+    border-radius: 7px;
+    background-color: rgb(9, 158, 207);
+    border: 2px solid black;
+    margin-top: 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.alternative-logs {
+    border: 2px solid #151b23;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 7px;
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alternative-logs a {
+    text-decoration: none;
+    color: rgb(9, 158, 207);
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 3px;
+    height: 14px;
+    text-align: left;
+    margin-left: 5px;
+}

@@ -1,0 +1,148 @@
+.des-changes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.des-changes input{
+    border-radius: 8px;
+    flex: 1;
+    max-width: 500px;
+    border: 1px solid #2d3748;
+    height: 36px;
+    padding: 0 12px;
+    background-color: #1a202c;
+    color: #f7fafc;
+}
+
+.base-buttons{
+    text-decoration: none;
+    padding: 6px 12px;
+    color: #f7fafc;
+    border: 1px solid #2d3748;
+    background-color: #3182ce;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.base-buttons:hover{
+    background-color: #2c5282;
+    transform: translateY(-2px);
+}
+
+.outer-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.side-content{
+    width: 300px;
+    color: #f7fafc;
+    border-right: 1px solid #2d3748;
+}
+
+.side-content p{
+    margin-bottom: -2px;
+    margin-left: 5px;
+}
+
+.side-buttons button{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    color: #f7fafc;
+    border: 1px solid #2d3748;
+    background-color: #3182ce;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    margin:5px;
+}
+
+.filter-group{
+    display: flex;          
+    align-items: center;   
+    gap: 10px;             
+    margin-top: 10px;
+}
+
+.al-button{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top:20px;
+    gap: 18px;
+}
+
+.filter-select{
+    flex: 1;               
+    border-radius: 8px;
+    border: 1px solid #2d3748;
+    padding: 4px;
+    background-color: #1a202c;
+    color: #f7fafc;
+    margin-right:20px
+}
+
+#reset-button{
+    flex: 1;
+    margin-right:0px;
+}
+
+.order-content {
+    width: 100%;
+    padding: 20px;
+}
+
+.order-group {
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    padding: 15px; 
+    margin-top: 20px;
+}
+
+.line1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.line2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.left-items {
+    display: flex;
+    gap: 30px; 
+}
+
+.right-items {
+    display: flex;
+    gap: 30px; 
+}
+
+
+.order-id, .p-name, .status, .price, .paid {
+    margin: 0; 
+    min-width: 100px; 
+    text-align: center; 
+}
+
+.status{
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-block;
+    background-color: #3182ce;
+}

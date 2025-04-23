@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notifications</title>
+        <link rel="stylesheet" href="side_bar.css">
+        <link rel="stylesheet" href="notifications.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="favicon.png" alt="MTM Logo" class="logo">
+            </div>
+            
+            <div class="nav-menu">
+                <div class="nav-item active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span><a href="dashboard.html">Dashboard</a></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-boxes"></i>
+                    <span><a href="inventory.html">Inventory</a></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <span><a href="purchase_order.html">Purchase Orders</a></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span><a href="customer_orders.html">Customer Orders</a></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-truck"></i>
+                    <span><a href="suppliers.html">Suppliers</a></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span><a href="reports_damages.html">Reports and Damages</a></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span><a href="reports.html">Reports</a></span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span><a href="notifications.html">Notifications</a></span>
+                    <span class="badge">3</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-cog"></i>
+                    <span><a href="settings.html">Settings</a></span>
+                </div>
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Log Out</span>
+                </div>
+            </div>
+        </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        
+        <div class="header-date">
+            <span id="current-date">Monday, June 10, 2024</span>
+        </div>
+        
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i> <!-- Default shows moon (dark mode available) -->
+        </button>
+        
+        <div class="user-profile">
+            <div class="profile-icon">JD</div>
+            <span class="user-name">John Doe</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+    
+        <div class="notifications-container">
+
+            <div class="notification-heading">
+                <div class="not-heading">
+                    <i class="fa-solid fa-bell"></i>
+                    <h2>Notifications</h2>
+                    <div><p>2 New</p></div>
+                </div>
+                <div class="notifs-buttons">
+                    <button class="mark-read-btn" runat="server">Mark All as Read</button>
+                    <button class="mark-read-btn" runat="server">Settings</button>
+                </div>
+            </div>
+        
+            <div class="notification unread">
+                <div class="content">
+                    <div class="title-div">
+                        <div class="icon-title">
+                            <i class="icon fa fa-bell"></i>
+                            <p class="title">New Order Received</p>
+                        </div>
+                        <div class="date-remove">
+                            <p style="font-size:12px;">10 minutes ago</p>
+                            <a href="notifications.html"><i style="color:#2196f3" class="fa-solid fa-xmark"></i></a>
+                        </div>
+                    </div>
+                    <p class="message">Order #2342 has been placed and is awaiting approval.</p>
+                </div>
+            </div>
+
+            <div class="notification unread">
+                <div class="content">
+                    <div class="title-div">
+                        <div class="icon-title">
+                            <i class="icon fa fa-truck"></i>
+                            <p class="title">Product Delivered</p>
+                        </div>
+                        <div class="date-remove">
+                            <p style="font-size:12px;">1 hour ago</p>
+                            <a href="notifications.html"><i style="color:#2196f3" class="fa-solid fa-xmark"></i></a>
+                        </div>
+                    </div>
+                    <p class="message">LG Fridge has arrived at the Cape Town depot.</p>
+                </div>
+            </div>
+
+            <div class="notification unread">
+                <div class="content">
+                    <div class="title-div">
+                        <div class="icon-title">
+                            <i class="icon fa fa-exclamation-triangle"></i>
+                            <p class="title">Return Request Pending</p>
+                        </div>
+                        <div class="date-remove">
+                            <p style="font-size:12px;">5 hours ago</p>
+                            <a href="notifications.html"><i style="color:#2196f3" class="fa-solid fa-xmark"></i></a>
+                        </div>
+                    </div>
+                    <p class="message">A damaged Sony speaker was flagged by an employee.</p>
+                </div>
+            </div>
+    
+           <!-- <div class="notification">
+                <i class="icon fa fa-truck"></i>
+                <div class="content">
+                    <p class="title">Product Delivered</p>
+                    <p class="message">LG Fridge has arrived at the Cape Town depot.</p>
+                </div>
+            </div>
+    
+            <div class="notification unread">
+                <i class="icon fa fa-exclamation-triangle"></i>
+                <div class="content">
+                    <p class="title">Return Request Pending</p>
+                    <p class="message">A damaged Sony speaker was flagged by an employee.</p>
+                </div>
+            </div> 
+        -->
+            <div class="view-link">
+                <a href="view_all-notifs.html">View all notifications</a> <br/>
+            </div>
+    
+        </div>
+    </main>
+    <script src="site.js"></script>
+    </body>
+</html>

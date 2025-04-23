@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in to MTM</title>
+    <link rel="stylesheet" href="login_reg.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <div class="outer-container">
+        <div class="logo-heading">
+            <img src="favicon.png" alt="MTM Logo" class="circle-img">
+            <h2 class="log-reg-heading">Sign in</h2>
+        </div>
+
+        <form class="login-box">
+            <div class="login-container">
+                <label class="log-reg-label">Email</label>
+                <input class="log-reg-input" type="email" id="email" required>
+                <p id="emailError"></p>
+
+                <label class="log-reg-label">Password</label>
+                <input class="log-reg-input" type="password" id="password" required>
+
+                <a href="reset_pass.html" class="forgot-password">Forgot password?</a>
+
+                <button type="submit" class="log-reg-button">Login</button>
+                <p id="message"></p>
+            </div>
+        </form>
+
+        <div class="alternative-logs">
+            <a href="work_number.html">Sign in with work-key</a>
+            <p>New User? <a href="register.html">Create an account</a></p>
+        </div>
+    </div>
+
+    <script>
+        const emailInput = document.getElementById("email");
+        const emailError = document.getElementById("emailError");
+
+        emailInput.addEventListener("input", () => {
+            const email = emailInput.value;
+            const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+            if (email.length === 0) {
+                emailError.textContent = "";
+            } else if (!isValid) {
+                emailError.textContent = "Invalid email address";
+            } else {
+                emailError.textContent = "";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
