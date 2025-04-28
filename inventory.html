@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Purchase Orders</title>
+        <title>Inventory Dashboard</title>
         <link rel="stylesheet" href="side_bar.css">
-        <link rel="stylesheet" href="purchase.css">
+        <link rel="stylesheet" href="inventory.css">
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
@@ -86,9 +86,101 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <h1 style="margin-top:0px;"> Inventory</h1>
-        
+        <div class="main-container">
+            <div class="side-container">
+                <p>Product Status</p>
+                <div class="side-buttons">
+                    <button class="base-buttons">Quote(63)</button>
+                    <button class="base-buttons">Shipped(23)</button>
+                    <button class="base-buttons">All(10)</button>
+                    <button class="base-buttons">Completed(30)</button>
+                </div>
+                <div class="side-filter">
+                    <p>Sort by</p>
+                    <select id="alphabet" class="filter-select" placeholder="ALPHABET A-Z">
+                        <option value="" disabled selected hidden>ALPHABET A-Z</option>
+                        <option value="a-z">Ascending order</option>
+                        <option value="z-a">Descending order</option>
+                    </select>
+                </div>
+                <div class="side-filter">
+                    <p>Stock alert</p>
+                    <select id="alphabet" class="filter-select" placeholder="ALPHABET A-Z">
+                        <option value="all">All Stock</option>
+                        <option value="a-z">Ascending order</option>
+                        <option value="z-a">Descending order</option>
+                    </select>
+                </div>
+                <div class="side-filter">
+                    <p>Category</p>
+                    <select id="alphabet" class="filter-select" placeholder="ALPHABET A-Z">
+                        <option value="all">All Product</option>
+                        <option value="a-z">Ascending order</option>
+                        <option value="z-a">Descending order</option>
+                    </select>
+                </div>
+                <div class="range-selector">
+                    <label for="maxPrice">Price: R0 - R<span id="priceValue">500</span></label><br>
+                    <input type="range" id="maxPrice" name="maxPrice" min="0" max="50000" value="500" step="10">
+                </div>
+                <div class="al-button">
+                    <button id="apply-filters" class="base-buttons">Apply Filters</button>
+                    <button id="reset-filters" class="base-buttons" style="margin-left:7px">Reset Filters</button>
+                </div>
+            </div>
+            <div style="width:1px; height:100vh; background-color: #2d3748;"></div>
+            <div class="inventory-container">
+                <div class="top-container">
+                    <div class="top-line">
+                        <div class="product-title">
+                            <h4>Product</h4>
+                            <p style="margin-top:-24px">1704 total products</p>
+                        </div>
+                        <input class="search-input" placeholder="Search inventory.....">
+                        <a href="#" class="scan-block" style="background-color: #0d1117; border: none; color: #f7fafc; cursor: pointer">
+                            <i style="margin-right:4px;" class="fa-solid fa-expand"></i>
+                            Scan 
+                        </a>  
+                        <a href="#" class="layout-style">
+                            <i class="fa-solid fa-grip-vertical"></i>
+                        </a>
+                        <a href="#" class="layout-style-1">
+                            <i class="fa-solid fa-list"></i>
+                        </a>
+                        <button style="height: 37px; margin-bottom: -5px;" class="base-buttons">Add New Product</button>
+                    </div>
+                </div>
+                <div style="width: 100%; height: 1px; background-color: #2d3748; margin-left: -20px; margin-right: -100px;"></div>
+                <div class="product-container">
+                    <div class="product-group">
+                        <div class="image-container" style="background-color: aqua;">
+                            <div class="image">
+                                 <img src="favicon.png" alt="prod-image" width="100%" height="100px"> 
+                            </div>
+                            <div class="empty"></div>
+                        </div>
+                        <div class="product-details" style="background-color: aquamarine;">
+                            <div class="product-name-retail">
+                                <p>Led Samsung TV 12'3</p>
+                                <span>Retail Product</span>
+                            </div>
+                        </div>
+                        <div class="product-action" style="background-color:blue;">
+                            <p>Hey there my name is Nonhlanhla Manganyi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="site.js"></script>
+    <script>
+        const maxPriceSlider = document.getElementById('maxPrice');
+        const priceValue = document.getElementById('priceValue');
+
+        maxPriceSlider.addEventListener('input', function() {
+        priceValue.textContent = this.value;
+        });
+    </script>
     </body>
 </html>

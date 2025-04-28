@@ -1,0 +1,148 @@
+
+
+.base-buttons{
+    text-decoration: none;
+    padding: 6px 12px;
+    color: #f7fafc;
+    border: 1px solid #637799;
+    background-color: #3182ce;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.base-buttons:hover{
+    background-color: #2c5282;
+    transform: translateY(-2px);
+}
+
+.main-container{
+    display:flex;
+    margin-top: -24px;
+}
+
+.side-container{
+    width: 300px;
+    color: #f7fafc;
+    
+}
+
+.side-container p{
+    margin-left: 5px;
+}
+
+.side-buttons{
+    margin-top: 15px;
+}
+
+.side-buttons button{
+    margin: 5px;
+}
+
+.inventory-container{
+    width: 100%;
+    padding: 20px;
+}
+
+.filter-select{
+    border: 1px solid #2d3748;
+    border-radius: 6px;
+    background-color: #1a202c;
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    color:#f7fafc;
+}
+
+.range-selector{
+    width: 200px;
+    margin-top: 20px;
+
+}
+
+.range-selector input{
+    width: 100%
+}
+
+.al-button{
+    margin-top: 20px;
+}
+
+.top-line{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    
+}
+
+.search-input{
+    width: 400px;
+    border: 1px solid #2d3748;
+    background-color: #1a202c;
+    border-radius: 6px;
+    margin-bottom: -8px;
+    margin-left:10px; 
+    height:35px
+}
+
+.scan-block{
+    border: 1px solid #1a202c;
+    border-radius: 6px;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 27px;
+    margin-bottom: -7px;
+    text-decoration: none;
+}
+
+.layout-style{
+    display: flex;
+    align-items: center;
+    border: 2px solid #1a202c;
+    background-color: #1a202c;
+    border-radius: 6px 0 0 6px;
+    padding: 6px 10px 6px 10px;
+    height: 23px;
+    margin-bottom: -5px;
+    text-decoration: none;
+}
+
+.layout-style-1{
+    display: flex;
+    align-items: center;
+    border: 1px solid #1a202c;
+    background-color: #1a202c;
+    border-radius: 0 6px 6px 0;
+    padding: 6px 10px 6px 10px;
+    margin-left: -19px;
+    height: 25px;
+    margin-bottom: -5px;
+    text-decoration: none;
+}
+
+.product-container{
+    display: flex;
+    align-items: center;
+   
+}
+
+.product-group{
+    display: flex;
+    justify-content: center;
+    align-items: centerS;
+    border: 1px solid #1a202c;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px
+
+}
+
+.product-name-retail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -38,6 +38,10 @@
                 <span><a href="suppliers.html">Suppliers</a></span>
             </div>
             <div class="nav-item">
+                <i class="fa-solid fa-warehouse"></i>
+                <span><a href="warehouses.html">Warehouses</a></span>
+            </div>
+            <div class="nav-item">
                 <i class="fas fa-exclamation-triangle"></i>
                 <span><a href="reports_damages.html">Reports and Damages</a></span>
             </div>
@@ -45,6 +49,7 @@
                 <i class="fas fa-chart-bar"></i>
                 <span><a href="reports.html">Reports</a></span>
             </div>
+            
             <div class="nav-item">
                 <i class="fas fa-bell"></i>
                 <span><a href="notifications.html">Notifications</a></span>
@@ -113,13 +118,10 @@
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label for="date">Date From:</label>
+                        <label for="date">Order Date:</label>
                         <input type="date" id="date" class="filter-select" placeholder="YYYY/MM/DD">
                     </div>
-                    <div class="filter-group">
-                        <label for="date">Date To:</label>
-                        <input type="date" id="date" class="filter-select" placeholder="YYYY/MM/DD">
-                    </div>
+
                 
                     <div class="filter-group">
                         <label for="supplier">Supplier:</label>
@@ -156,13 +158,51 @@
                             <div class="right-items">
                                 <p class="status">Processing</p>
                                 <h4 class="price">R50,000.00</h4>
-                                <p class="paid">Unpaid</p>
+                                <div class="payment-paid">
+                                    <i style="color: lightgreen" class="fa-solid fa-circle-check"></i>
+                                    <p class="paid">Paid</p>
+                                </div>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="left-items">
-                                <p class="supplier-name">Lenovo</p>
+                                <div class="supplier">
+                                    <i class="fa-solid fa-cube"></i>
+                                    <p class="supplier-name">Lenovo</p>
+                                </div>
                                 <p class="address">15 Annadale st,Johannesburg<p>
+                                <p style="font-size: 13px;">Warehouse-01</p>
+                            </div>
+                            <div class="right-items">
+                                <button class="base-buttons" style="background-color:#2196F3">Accept</button>
+                                <button class="base-buttons" style="background-color:#F44336">Reject</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="order-group">
+                        <div class="line1">
+                            <div class="left-items">
+                                <p class="order-id">Order #1234</p>
+                                <h4 class="p-name">Premium Laptop</h4>
+                            </div>
+                            <div class="right-items">
+                                <p class="status">Processing</p>
+                                <h4 class="price">R50,000.00</h4>
+                                <div class="payment-unpaid">
+                                    <i style="color:red" class="fa-solid fa-circle-xmark"></i>
+                                    <p class="paid">Unpaid</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line2">
+                            <div class="left-items">
+                                <div class="supplier">
+                                    <i class="fa-solid fa-cube"></i>
+                                    <p class="supplier-name">Lenovo</p>
+                                </div>
+                                <p class="address">15 Annadale st,Johannesburg<p>
+                                <p style="font-size: 13px;">Warehouse-01</p>
                             </div>
                             <div class="right-items">
                                 <button class="base-buttons" style="background-color:#2196F3">Accept</button>
@@ -179,13 +219,20 @@
                             <div class="right-items">
                                 <p class="status">Processing</p>
                                 <h4 class="price">R50,000.00</h4>
-                                <p class="paid">Unpaid</p>
+                                <div class="payment-unpaid">
+                                    <i style="color:red" class="fa-solid fa-circle-xmark"></i>
+                                    <p class="paid">Unpaid</p>
+                                </div>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="left-items">
-                                <p class="supplier-name">Lenovo</p>
+                                <div class="supplier">
+                                    <i class="fa-solid fa-cube"></i>
+                                    <p class="supplier-name">Lenovo</p>
+                                </div>
                                 <p class="address">15 Annadale st,Johannesburg<p>
+                                <p style="font-size: 13px;">Warehouse-01</p>
                             </div>
                             <div class="right-items">
                                 <button class="base-buttons" style="background-color:#2196F3">Accept</button>
@@ -202,13 +249,80 @@
                             <div class="right-items">
                                 <p class="status">Processing</p>
                                 <h4 class="price">R50,000.00</h4>
-                                <p class="paid">Unpaid</p>
+                                <div class="payment-paid">
+                                    <i style="color: lightgreen" class="fa-solid fa-circle-check"></i>
+                                    <p class="paid">Paid</p>
+                                </div>
                             </div>
                         </div>
                         <div class="line2">
                             <div class="left-items">
-                                <p class="supplier-name">Lenovo</p>
+                                <div class="supplier">
+                                    <i class="fa-solid fa-cube"></i>
+                                    <p class="supplier-name">Lenovo</p>
+                                </div>
                                 <p class="address">15 Annadale st,Johannesburg<p>
+                                <p style="font-size: 13px;">Warehouse-01</p>
+                            </div>
+                            <div class="right-items">
+                                <button class="base-buttons" style="background-color:#2196F3">Accept</button>
+                                <button class="base-buttons" style="background-color:#F44336">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-group">
+                        <div class="line1">
+                            <div class="left-items">
+                                <p class="order-id">Order #1234</p>
+                                <h4 class="p-name">Premium Laptop</h4>
+                            </div>
+                            <div class="right-items">
+                                <p class="status">Processing</p>
+                                <h4 class="price">R50,000.00</h4>
+                                <div class="payment-unpaid">
+                                    <i style="color:red" class="fa-solid fa-circle-xmark"></i>
+                                    <p class="paid">Unpaid</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line2">
+                            <div class="left-items">
+                                <div class="supplier">
+                                    <i class="fa-solid fa-cube"></i>
+                                    <p class="supplier-name">Lenovo</p>
+                                </div>
+                                <p class="address">15 Annadale st,Johannesburg<p>
+                                <p style="font-size: 13px;">Warehouse-01</p>
+                            </div>
+                            <div class="right-items">
+                                <button class="base-buttons" style="background-color:#2196F3">Accept</button>
+                                <button class="base-buttons" style="background-color:#F44336">Reject</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-group">
+                        <div class="line1">
+                            <div class="left-items">
+                                <p class="order-id">Order #1234</p>
+                                <h4 class="p-name">Premium Laptop</h4>
+                            </div>
+                            <div class="right-items">
+                                <p class="status">Processing</p>
+                                <h4 class="price">R50,000.00</h4>
+                                <div class="payment-paid">
+                                    <i style="color: lightgreen" class="fa-solid fa-circle-check"></i>
+                                    <p class="paid">Paid</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line2">
+                            <div class="left-items">
+                                <div class="supplier">
+                                    <i class="fa-solid fa-cube"></i>
+                                    <p class="supplier-name">Lenovo</p>
+                                </div>
+                                <p class="address">15 Annadale st,Johannesburg<p>
+                                <p style="font-size: 13px;">Warehouse-01</p>
                             </div>
                             <div class="right-items">
                                 <button class="base-buttons" style="background-color:#2196F3">Accept</button>
