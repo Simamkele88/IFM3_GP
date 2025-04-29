@@ -1,27 +1,6 @@
-/* ==================== */
-/* THEME VARIABLES */
-/* ==================== */
-:root {
-  /* Light Theme */
-  --primary-bg: #ffffff;
-  --secondary-bg: #f8fafc;
-  --sidebar-bg: #ffffff;
-  --text-primary: #1a202c;
-  --text-secondary: #4a5568;
-  --text-sidebar: #2d3748;
-  --accent-color: #3182ce;
-  --border-color: #e2e8f0;
-  --hover-bg: #edf2f7;
-  --active-bg: #ebf8ff;
-  --active-text: #3182ce;
-  --badge-bg: #e53e3e;
-  --badge-text: #ffffff;
-  --shadow: 0 1px 3px rgba(0,0,0,0.1);
-  --logo-bg: #ffffff;
-  --sidebar-shadow: 2px 0 5px rgba(0,0,0,0.05);
-}
 
-[data-theme="dark"] {
+
+:root{
   /* Dark Theme */
   --primary-bg: #1a202c;
   --secondary-bg: #12171f;

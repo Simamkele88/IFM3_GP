@@ -39,49 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     // ====================
-    // THEME MANAGEMENT
-    // ====================
-    const initTheme = () => {
-        if (!themeToggle) return;
-        
-        const icon = themeToggle.querySelector('i');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-        
-        // Get stored theme or use system preference
-        let currentTheme = localStorage.getItem('theme') || 
-                         (prefersDark.matches ? 'dark' : 'light');
-        
-        // Apply theme
-        const applyTheme = (theme) => {
-            document.documentElement.setAttribute('data-theme', theme);
-            localStorage.setItem('theme', theme);
-            
-            // Update icon
-            if (icon) {
-                icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            }
-        };
-        
-        // Initialize
-        applyTheme(currentTheme);
-        
-        // Toggle theme on button click
-        themeToggle.addEventListener('click', () => {
-            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' 
-                ? 'light' 
-                : 'dark';
-            applyTheme(newTheme);
-        });
-        
-        // Watch for system theme changes
-        prefersDark.addEventListener('change', e => {
-            if (!localStorage.getItem('theme')) {
-                applyTheme(e.matches ? 'dark' : 'light');
-            }
-        });
-    };
-
-    // ====================
     // MOBILE MENU TOGGLE
     // ====================
     const setupMobileMenu = () => {

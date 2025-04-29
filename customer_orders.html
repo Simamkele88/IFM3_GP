@@ -74,9 +74,7 @@
             <span id="current-date">Monday, June 10, 2024</span>
         </div>
         
-        <button class="theme-toggle" id="themeToggle">
-            <i class="fas fa-moon"></i> <!-- Default shows moon (dark mode available) -->
-        </button>
+        
         
         <div class="user-profile">
             <div class="profile-icon">JD</div>
@@ -86,52 +84,80 @@
 
     <!-- Main Content -->
     <main class="main-content">
-        <h1 style="margin-top:0px;"> Customer Orders</h1>
+        <h2 style="margin-top:0px;"> Orders</h2>
         <!-- Handles the page description and the buttons of suppliers-->
         <div class="des-changes">
             <span class="des-paragraph">
               <p> Manage and track customer orders</p>
             </span>
             <span class="des-buttons">
-                <a href="customer_orders.html">Refresh</a>
-                <a href="export.html">Export</a>
-                <a href="new_order.html">+ New order</a>
+                <a href="customer_orders.html"><i style="margin-right: 5px;" class="fa-solid fa-rotate"></i>Refresh</a>
+                <a href="export.html"><i style="margin-right: 5px;" class="fa-solid fa-download"></i>Export</a>
+                <a href="new_order.html"><i style="margin-right: 5px;" class="fa-solid fa-plus"></i>New order</a>
             </span>
         </div>
         
         <!-- Boxes for the reports and everything-->
         <div class="report-container">
-            <div class="report-box">
-                <h4>Total Orders</h4>
-                <p>23</p>
+            <div class="report-box" style="color: rgb(219, 91, 219); background-color: rgb(230, 217, 230);">
+                <div class="report-heading">
+                     <h5>Total Orders</h5>
+                     <i style="font-size: 12px; margin-top: -8px" class="fa-solid fa-cube"></i>
+                </div>
+                <p style="color: rgb(219, 91, 219);">23</p>
+                <p style="font-size:10px; margin-top: 6px;color: rgb(219, 91, 219);">
+                    <i style="margin-right: 5px;" class="fa-solid fa-arrow-trend-up"></i>
+                    +12% from last month
+                </p>
             </div>
-            <div class="report-box">
-                <h4>Total Orders</h4>
-                <p>23</p>
+            <div class="report-box" style="color: rgb(113, 214, 113); background-color: rgb(193, 219, 193);">
+                <div class="report-heading">
+                     <h5>Total Order Value</h5>
+                     <i style="font-size: 12px; margin-top: -8px" class="fa-solid fa-cube"></i>
+                </div>
+                <p style="color: rgb(113, 214, 113);">R 49 546.87</p>
+                <p style="font-size:10px; margin-top: 6px;color: rgb(113, 214, 113);">
+                    <i style="margin-right: 5px;" class="fa-solid fa-arrow-trend-up"></i>
+                     Average  R5034.34 per order
+                </p>
             </div>
-            <div class="report-box">
-                <h4>Total Orders</h4>
-                <p>23</p>
+            <div class="report-box" style="color: rgb(72, 72, 164); background-color: rgb(168, 168, 245);">
+                <div class="report-heading">
+                     <h5>Processing</h5>
+                     <i style="font-size: 12px; margin-top: -8px" class="fa-solid fa-clock"></i>
+                </div>
+                <p style="color: rgb(72, 72, 164);">3</p>
+                <p style="font-size:10px; margin-top: 6px;color: rgb(72, 72, 164);">
+                    <i style="margin-right: 5px;" class="fa-solid fa-spinner"></i>
+                     3 orders being packed
+                </p>
             </div>
-            <div class="report-box">
-                <h4>Total Orders</h4>
-                <p>23</p>
+            <div class="report-box" style="color: rgb(218, 158, 48); background-color: rgb(228, 215, 191);">
+                <div class="report-heading">
+                     <h5>Pending</h5>
+                     <i style="font-size: 12px; margin-top: -8px" class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <p style="color: rgb(218, 158, 48);">2</p>
+                <p style="font-size:10px; margin-top: 6px;color: rgb(218, 158, 48);">
+                    <i style="margin-right: 5px;" class="fa-solid fa-clock"></i>
+                     Awaiting Processing
+                </p>
             </div>
         </div>
 
         <!-- For the search bar and the -->
          <div class="div-container">
                 <input type="text" placeholder="Search order by ID or customer...">
-                <p>All Status   <span class="badge" style="margin-left:5px;">24</span></p>
-                <p>All Items  <span class="badge" style="margin-left:5px;">30</span></p>
+                <p>All Status<i style="margin-left:5px" class="fa-solid fa-filter"></i></p>
+                <p>All Items<i style="margin-left:5px" class="fa-solid fa-calendar"></i></p>
          </div>
 
          <!-- Tables for orders -->
          <table class="order-table">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>Order ID</th>
+                    <th><input type="checkbox"></th>
+                    <th>Order ID <i class="fa-solid fa-arrows-up-to-line"></i></th>
                     <th>Customer</th>
                     <th>Date</th>
                     <th>Status</th>
@@ -142,74 +168,74 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>order-001</td>
+                    <td><input type="checkbox"></td>
+                    <td>ORD-001</td>
                     <td>John Doe</td>
                     <td>23 April 2024</td>
                     <td><span class="status status-in-transit">In transit</span></td>
                     <td><span class="payment payment-paid">Paid</span></td>
                     <td>WAR-001</td>
-                    <td><button class="action-btn btn-view">View</button></td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>order-002</td>
+                    <td><input type="checkbox"></td>
+                    <td>ORD-002</td>
                     <td>Jane Smith</td>
                     <td>22 April 2024</td>
                     <td><span class="status status-delivered">Delivered</span></td>
                     <td><span class="payment payment-paid">Paid</span></td>
                     <td>WAR-002</td>
-                    <td><button class="action-btn btn-details">Details</button></td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>order-003</td>
+                    <td><input type="checkbox"></td>
+                    <td>ORD-003</td>
                     <td>Robert Johnson</td>
                     <td>21 April 2024</td>
                     <td><span class="status status-processing">Processing</span></td>
-                    <td><span class="payment payment-pending">Pending</span></td>
+                    <td><span class="payment payment-unpaid">Unpaid</span></td>
                     <td>WAR-001</td>
-                    <td><button class="action-btn btn-edit">Edit</button></td>
+                    <td><i class="fa-solid fa-bell"></i><i style="margin-left: 10px;" class="fa-solid fa-ellipsis"></i></td>
                 </tr>
                 <tr>
-                    <td>4</td>
-                    <td>order-004</td>
+                    <td><input type="checkbox"></td>
+                    <td>ORD-004</td>
                     <td>Emily Davis</td>
                     <td>20 April 2024</td>
                     <td><span class="status status-cancelled">Cancelled</span></td>
                     <td><span class="payment payment-refunded">Refunded</span></td>
                     <td>WAR-003</td>
-                    <td><button class="action-btn btn-report">Report</button></td>
+                    <td><i class="fa-solid fa-bell"></i><i style="margin-left: 10px;" class="fa-solid fa-ellipsis"></i></td>
                 </tr>
                 <tr>
-                    <td>5</td>
-                    <td>order-005</td>
+                    <td><input type="checkbox"></td>
+                    <td>ORD-005</td>
                     <td>Michael Wilson</td>
                     <td>19 April 2024</td>
                     <td><span class="status status-shipped">Shipped</span></td>
                     <td><span class="payment payment-paid">Paid</span></td>
                     <td>WAR-002</td>
-                    <td><button class="action-btn btn-track">Track</button></td>
+                    <td><i class="fa-solid fa-ellipsis"></i></td>
                 </tr>
                 <tr>
-                    <td>6</td>
-                    <td>order-006</td>
+                    <td><input type="checkbox"></td>
+                    <td>ORD-006</td>
                     <td>Sarah Brown</td>
                     <td>18 April 2024</td>
                     <td><span class="status status-returned">Returned</span></td>
                     <td><span class="payment payment-partial-refund">Partial Refund</span></td>
                     <td>WAR-003</td>
-                    <td><button class="action-btn btn-process">Process</button></td>
+                    <td><i class="fa-solid fa-bell"></i><i style="margin-left: 10px;" class="fa-solid fa-ellipsis"></i></td>
                 </tr>
                 <tr>
-                    <td>7</td>
-                    <td>order-007</td>
+                    <td><input type="checkbox"></td>
+                    <td>ORD-007</td>
                     <td>David Miller</td>
                     <td>17 April 2024</td>
                     <td><span class="status status-pending">Pending</span></td>
                     <td><span class="payment payment-unpaid">Unpaid</span></td>
                     <td>WAR-001</td>
-                    <td><button class="action-btn btn-remind">Remind</button></td>
+                    <td><i class="fa-solid fa-bell"></i><i style="margin-left: 10px;" class="fa-solid fa-ellipsis"></td>
                 </tr>
             </tbody>
         </table>

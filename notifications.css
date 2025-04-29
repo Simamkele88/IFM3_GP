@@ -31,21 +31,14 @@ body {
     padding: 0 3px 0 3px;
 }
 
-.not-heading div{
-    background-color:#4db8ff;
-    align-items: center;
-    text-align: center;
-    max-height: 20px;
-    min-width: 40px;
-    border-radius: 15px;
-    padding: 0 px 2px 2px;
-    color:#1e1e2f;
-    margin-top: -3px;
-}
-
 .not-heading p{
+    background-color:#4db8ff;
+    padding: 0 5px 0 5px;
     margin: auto;
     font-size: 12px;
+    border-radius: 15px;
+    color:#1e1e2f;
+    margin-bottom: 35px;
 }
 
 
